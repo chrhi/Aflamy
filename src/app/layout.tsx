@@ -17,7 +17,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="bg-gradient-to-b from-zinc-950 to-red-900">
+        <div className="w-[300px] h-screen bg-black fixed top-0 bottom-0 left-0"></div>
+        <div className="bg-gradient-to-b from-zinc-950 to-red-900 w-[calc(100%-300px)] ml-[300px]">
           {children}
         </div>
       </body>
