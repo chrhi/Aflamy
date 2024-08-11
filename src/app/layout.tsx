@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import SideBar from "@/components/side-bar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,19 +18,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="w-[300px] h-screen flex flex-col justify-between bg-zinc-900 fixed top-0 bottom-0 left-0 p-8">
-          <div className="w-full min-h-[300px] h-fit">
-            <p className="text-2xl font-bold text-white">Web Launchpad</p>
+        <div className="">
+          <SideBar />
 
-            <div className="w-full h-[300px] flex flex-col gap-y-4">
-              <p className="text-white text-lg">Genera</p>
-            </div>
+          <div className="bg-zinc-900 w-[calc(100%-300px)] ml-[300px] ">
+            {children}
           </div>
-
-          <div className="w-full h-[200px] bg-orange-500"></div>
-        </div>
-        <div className="bg-zinc-900 w-[calc(100%-300px)] ml-[300px] ">
-          {children}
         </div>
       </body>
     </html>

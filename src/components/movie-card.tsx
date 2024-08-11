@@ -8,7 +8,7 @@ interface MovieCardProps {
 
 const MovieCard: FC<MovieCardProps> = ({ movie }) => {
   return (
-    <div className="w-full max-w-[300px] h-[400px] flex flex-col gap-y-4">
+    <div className="w-full max-w-[300px] h-[400px] flex flex-col gap-y-4 hover:scale-105 transition-all duration-300 cursor-pointer">
       <div className="h-[80%] w-full rounded-2xl relative">
         <Image
           src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`}
