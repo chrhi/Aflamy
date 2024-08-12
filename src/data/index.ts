@@ -1,98 +1,122 @@
-import { Flame } from "lucide-react";
+import {
+  Bomb,
+  Flame,
+  FlaskConical,
+  Flower,
+  Laugh,
+  Martini,
+  MicVocal,
+  Rocket,
+  Scroll,
+  Search,
+  Shield,
+  TreePalm,
+  Users,
+  WandSparkles,
+} from "lucide-react";
 
 export const dashboardItems = [
   {
     name: "Action",
     icon: Flame,
-    url: "/genera/28",
+    url: "/genre/28",
   },
   {
     name: "Fantasy",
-    icon: Flame,
-    url: "/genera/14",
+    icon: WandSparkles,
+    url: "/genre/14",
   },
   {
     name: "Comedy",
-    icon: Flame,
-    url: "/genera/35",
+    icon: Laugh,
+    url: "/genre/35",
   },
   {
     name: "Adventure",
-    icon: Flame,
-    url: "/genera/12",
+    icon: TreePalm,
+    url: "/genre/12",
   },
   {
     name: "Crime",
-    icon: Flame,
-    url: "/genera/80",
+    icon: Bomb,
+    url: "/genre/80",
   },
 
   {
     name: "Documentary",
-    icon: Flame,
-    url: "/genera/99",
+    icon: Shield,
+    url: "/genre/99",
   },
   {
     name: "Drama",
-    icon: Flame,
-    url: "/genera/18",
+    icon: Flower,
+    url: "/genre/18",
   },
   {
     name: "Family",
-    icon: Flame,
-    url: "/genera/10751",
+    icon: Users,
+    url: "/genre/10751",
   },
 
   {
     name: "History",
-    icon: Flame,
-    url: "/genera/36",
+    icon: Scroll,
+    url: "/genre/36",
   },
   {
     name: "Horror",
     icon: Flame,
-    url: "/genera/27",
+    url: "/genre/27",
   },
   {
     name: "Music",
-    icon: Flame,
-    url: "/genera/10402",
+    icon: MicVocal,
+    url: "/genre/10402",
   },
 
   {
     name: "Mystery",
-    icon: Flame,
-    url: "/genera/9648",
+    icon: Search,
+    url: "/genre/9648",
   },
   {
     name: "Romance",
     icon: Flame,
-    url: "/genera/10749",
+    url: "/genre/10749",
   },
   {
     name: "Science Fiction",
-    icon: Flame,
-    url: "/genera/878",
+    icon: FlaskConical,
+    url: "/genre/878",
   },
 
   {
     name: "TV Movie",
     icon: Flame,
-    url: "/genera/10770",
+    url: "/genre/10770",
   },
   {
     name: "Thriller",
-    icon: Flame,
-    url: "/genera/53",
+    icon: Rocket,
+    url: "/genre/53",
   },
   {
     name: "War",
-    icon: Flame,
-    url: "/genera/10752",
+    icon: Shield,
+    url: "/genre/10752",
   },
   {
     name: "Western",
-    icon: Flame,
-    url: "/genera/37",
+    icon: Martini,
+    url: "/genre/37",
   },
 ];
+
+export const getGenreNameByNumber = (
+  genreNumber: number
+): string | undefined => {
+  const genre = dashboardItems.find(
+    (item) => item.url === `/genre/${genreNumber}`
+  );
+  return genre ? genre.name : undefined;
+};

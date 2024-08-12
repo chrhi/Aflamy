@@ -27,8 +27,18 @@ export default function Banner({ moviesData }: { moviesData: Movie[] }) {
                     src={`https://image.tmdb.org/t/p/original/${item.backdrop_path}`}
                     alt="this is the image"
                     fill
+                    loading="eager"
                     className="object-cover rounded-2xl"
                   />
+
+                  <div className="w-full h-full bg-black/50 absolute inset-0 z-[10] flex flex-col justify-end gap-y-4 p-4">
+                    <h2 className="text-white font-bold text-start text-4xl ">
+                      {item.title}
+                    </h2>
+                    <p className="text-white text-start text-lg">
+                      {item.overview}
+                    </p>
+                  </div>
                 </div>
               </CarouselItem>
             );

@@ -21,7 +21,7 @@ const SideBar: FC = ({}) => {
       <ScrollArea className="w-full h-[600px]  flex flex-col gap-y-4">
         <p className="text-white text-lg">Genera</p>
 
-        <div className="w-full h-fit flex flex-col gap-y-4">
+        <div className="w-full h-fit flex flex-col gap-y-1">
           {dashboardItems.map((item) => {
             return (
               <Link
