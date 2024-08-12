@@ -3,12 +3,19 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { dashboardItems } from "@/data";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { Button, buttonVariants } from "./ui/button";
+import { buttonVariants } from "./ui/button";
+import Image from "next/image";
 
 const SideBar: FC = ({}) => {
   return (
     <div className="w-[300px] h-screen flex flex-col justify-between bg-zinc-900 fixed top-0 bottom-0 left-0 p-8">
-      <p className="text-2xl font-bold text-white">Web Launchpad</p>
+      <Image
+        src={"/logo.svg"}
+        alt="this is an image"
+        width={150}
+        height={45}
+        className="mb-4"
+      />
 
       <ScrollArea className="w-full h-[600px]  flex flex-col gap-y-4">
         <p className="text-white text-lg">Genera</p>
