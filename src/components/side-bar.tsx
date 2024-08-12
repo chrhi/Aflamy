@@ -9,14 +9,6 @@ const SideBar: FC = ({}) => {
   return (
     <div className="w-[300px] h-screen flex flex-col justify-between bg-zinc-900 fixed top-0 bottom-0 left-0 p-8">
       <p className="text-2xl font-bold text-white">Web Launchpad</p>
-      <div className="w-full h-[200px] flex items-center justify-start">
-        <Button
-          className="bg-white text-zinc-900 w-full font-bold hover:bg-white"
-          size={"lg"}
-        >
-          Subscribe Now
-        </Button>
-      </div>
 
       <ScrollArea className="w-full h-[600px]  flex flex-col gap-y-4">
         <p className="text-white text-lg">Genera</p>
