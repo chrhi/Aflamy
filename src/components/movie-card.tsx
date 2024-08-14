@@ -5,9 +5,10 @@ import type { FC } from "react";
 
 interface MovieCardProps {
   movie: Movie;
+  index: number;
 }
 
-const MovieCard: FC<MovieCardProps> = ({ movie }) => {
+const MovieCard: FC<MovieCardProps> = ({ movie, index }) => {
   return (
     <Link href={`/${movie.id}`}>
       <div className="w-full max-w-[300px] h-[400px] flex flex-col gap-y-4 hover:scale-105 transition-all duration-300 cursor-pointer">

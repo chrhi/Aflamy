@@ -20,6 +20,8 @@
     "next13-progressbar": "^1.2.1",
     "react": "^18",
     "react-dom": "^18",
+    "react-simple-star-rating": "^5.1.7",
+    "react-star-ratings": "^2.3.0",
     "tailwind-merge": "^2.4.0",
     "tailwindcss-animate": "^1.0.7"
   },
@@ -27,6 +29,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/react-star-ratings": "^2.3.3",
     "eslint": "^8",
     "eslint-config-next": "14.2.5",
     "postcss": "^8",

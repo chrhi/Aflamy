@@ -1,7 +1,6 @@
 import { getDiscoverMovies } from "@/actions/tmdb.actions";
 import Banner from "@/components/bnnner";
 import MovieListing from "@/components/movie-listing";
-import { Movie } from "@/types";
 
 export default async function Home() {
   const movies = await getDiscoverMovies();
