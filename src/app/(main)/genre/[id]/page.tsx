@@ -10,8 +10,6 @@ interface PageProps {
 const Page: FC<PageProps> = async ({ params }) => {
   const data = await getMoviesByGenre({ genreId: params?.id });
 
-  console.log(data);
-
   return (
     <div className="w-full min-h-screen h-fit p-4">
       <div className="w-full h-[70px] flex items-center justify-start">

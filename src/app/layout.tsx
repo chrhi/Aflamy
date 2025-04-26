@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import SideBar from "@/components/side-bar";
 
 import "./globals.css";
 
@@ -27,12 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="">
-          <SideBar />
-          <div className="bg-zinc-900 w-[calc(100%-300px)] ml-[300px] ">
-            {children}
-          </div>
-        </div>
+        <div className="">{children}</div>
       </body>
     </html>
   );
