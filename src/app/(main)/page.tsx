@@ -10,6 +10,8 @@ export default async function Page() {
       there is no movies to be displayed
     </p>;
   }
+
+  console.log(movies);
   return (
     <main className="flex min-h-screen flex-col items-center justify-between mx-auto px-8">
       <Banner moviesData={movies!} />

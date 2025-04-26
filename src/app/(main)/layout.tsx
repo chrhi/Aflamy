@@ -10,7 +10,7 @@ export default function Layout({
   return (
     <>
       <SideBar />
-      <div className="bg-zinc-900 w-[calc(100%-300px)] ml-[300px] ">
+      <div className="bg-zinc-900  w-full md:w-[calc(100%-300px)] md:ml-[300px] ">
         {children}
       </div>
     </>
